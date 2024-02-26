@@ -11,6 +11,6 @@ Return the maximum possible achievable number. It can be proven that there exist
  * @param {number} t
  * @return {number}
  */
-var theMaximumAchievableX = function(num, t) {
-    return num+(2*t);
- };
+var theMaximumAchievableX = function (num, t) {
+  return num + 2 * t;
+};

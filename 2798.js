@@ -11,10 +11,10 @@ Return the integer denoting the number of employees who worked at least target h
  * @param {number} target
  * @return {number}
  */
-var numberOfEmployeesWhoMetTarget = function(hours, target) {
-    var count = 0;
-    hours.forEach(i=>{
-        return i >=target ? count++ : null;
-    });
-    return count;
+var numberOfEmployeesWhoMetTarget = function (hours, target) {
+  var count = 0;
+  hours.forEach((i) => {
+    return i >= target ? count++ : null;
+  });
+  return count;
 };

@@ -10,8 +10,8 @@ Return the array ans.
  * @param {number[]} nums
  * @return {number[]}
  */
-var getConcatenation = function(nums) {
-    var arr = nums;
-    nums.forEach((i)=>arr.push(i));
-    return arr;
+var getConcatenation = function (nums) {
+  var arr = nums;
+  nums.forEach((i) => arr.push(i));
+  return arr;
 };

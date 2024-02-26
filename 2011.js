@@ -7,29 +7,29 @@ Initially, the value of X is 0.
 Given an array of strings operations containing a list of operations, return the final value of X after performing all the operations.
 
   */
- /**
+/**
  * @param {string[]} operations
  * @return {number}
  */
-var finalValueAfterOperations = function(operations) {
-    let X=0;
+var finalValueAfterOperations = function (operations) {
+  let X = 0;
 
-    operations.forEach((op)=>{
-        switch(op){
-            case "--X":
-            --X;
-            break;
-            case "X--":
-            X--;
-            break;
-            case "++X":
-            ++X;
-            break;
-            case "X++":
-            X++;
-            break;
-        }
-        console.log(op,X);
-    });
-    return X;
+  operations.forEach((op) => {
+    switch (op) {
+      case "--X":
+        --X;
+        break;
+      case "X--":
+        X--;
+        break;
+      case "++X":
+        ++X;
+        break;
+      case "X++":
+        X++;
+        break;
+    }
+    console.log(op, X);
+  });
+  return X;
 };

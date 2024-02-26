@@ -7,10 +7,10 @@ A zero-based permutation nums is an array of distinct integers from 0 to nums.le
  * @param {number[]} nums
  * @return {number[]}
  */
-var buildArray = function(nums) {
-    var ans = [];
-    for(let i = 0;i <nums.length;i++){
-        ans[i] = nums[nums[i]];
-    }
-    return ans;
+var buildArray = function (nums) {
+  var ans = [];
+  for (let i = 0; i < nums.length; i++) {
+    ans[i] = nums[nums[i]];
+  }
+  return ans;
 };
