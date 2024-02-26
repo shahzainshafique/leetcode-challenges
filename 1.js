@@ -11,12 +11,12 @@ You can return the answer in any order.
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(nums, target) {
-    var output = [];
-    for(let i=0;i<nums.length;i++){
-        for(let j=i+1;j<nums.length;j++){
-            nums[i]+nums[j]==target?output.push(i,j):null;
-        }
+var twoSum = function (nums, target) {
+  var output = [];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      nums[i] + nums[j] == target ? output.push(i, j) : null;
     }
-    return output;
+  }
+  return output;
 };

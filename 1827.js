@@ -10,17 +10,17 @@ An array nums is strictly increasing if nums[i] < nums[i+1] for all 0 <= i < num
  * @param {number[]} nums
  * @return {number}
  */
-var minOperations = function(nums) {
-    var count = 0;
-    if(nums.length<=1) return 0;
+var minOperations = function (nums) {
+  var count = 0;
+  if (nums.length <= 1) return 0;
 
-    for(let i=0; i<nums.length;i++){
-        if(nums[i]<=nums[i-1]){
-        var diff = nums[i-1] - nums[i]+1;
-        console.log(diff);
-        nums[i]+=diff;
-        count+=diff;
-        }
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] <= nums[i - 1]) {
+      var diff = nums[i - 1] - nums[i] + 1;
+      console.log(diff);
+      nums[i] += diff;
+      count += diff;
     }
-    return count;
+  }
+  return count;
 };

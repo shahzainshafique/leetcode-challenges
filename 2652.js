@@ -7,12 +7,12 @@ Return an integer denoting the sum of all numbers in the given range satisfying 
  * @param {number} n
  * @return {number}
  */
-var sumOfMultiples = function(n) {
-    var sum = 0;
-    for(let i=1; i<=n;i++){
-        if(i%3==0||i%5==0||i%7==0){
-            sum+=i;
-        }
+var sumOfMultiples = function (n) {
+  var sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
+      sum += i;
     }
-    return sum;
+  }
+  return sum;
 };

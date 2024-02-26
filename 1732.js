@@ -9,13 +9,13 @@ You are given an integer array gain of length n where gain[i] is the net gain in
  * @param {number[]} gain
  * @return {number}
  */
-var largestAltitude = function(gain) {
-    var max=0;
-    var num = 0;
+var largestAltitude = function (gain) {
+  var max = 0;
+  var num = 0;
 
-   for(let i=0;i<gain.length;i++){
-       num+=gain[i];
-       max = Math.max(num,max);
-   }
-   return max;
+  for (let i = 0; i < gain.length; i++) {
+    num += gain[i];
+    max = Math.max(num, max);
+  }
+  return max;
 };
